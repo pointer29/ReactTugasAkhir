@@ -4,14 +4,14 @@ import { LOGOUT_SUCCESS, LOGIN_SUBMIT,LIST_MUSIC,REGISTER_SUBMIT } from '../acti
 export function auth(state = {
   data: { isValid: false },
 }, action) {
-
-  
-  console.log('AUTH', action);
+  //console.log('AUTH', action);
   switch (action.type) {
     case LOGIN_SUBMIT:
-      
+      console.log('AUTH-Logina', action);
       return Object.assign({}, state, {
-        data: action.data,
+        //isValid: true,
+        data: action.data
+        
       });
     case LIST_MUSIC:
           return Object.assign({}, state, {
@@ -25,9 +25,10 @@ export function auth(state = {
 export function reducerRegister(state = {
    RegisterSuccess: false ,
 }, action) {
-  console.log('REGISTER_SUBMIT', action);
+  
   switch (action.type) {
     case REGISTER_SUBMIT:
+      console.log('REGISTER_SUBMIT', action);
       return Object.assign({}, state, {
         RegisterSuccess: true,
         data: action.data,
@@ -46,6 +47,7 @@ export function getTodos(state = {
     case LOGIN_SUBMIT:
       return Object.assign({}, state, {
         data: action.data,
+        
       });
     default:
       return state;

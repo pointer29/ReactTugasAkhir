@@ -31,7 +31,7 @@ class Login extends React.Component {
   };
 
   componentWillReceiveProps(nextProps){
-    //console.log('nextprops', nextProps)
+    console.log('nextprops', nextProps)
 
     const {dataAuth: {isValid}} = nextProps
     if (this.props !== nextProps){

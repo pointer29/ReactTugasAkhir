@@ -1,0 +1,282 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    /* background: #000;
+    color: #fff; */
+    font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, 'Lucida Grande', sans-serif;
+  }
+  
+  .content-container {
+    max-width: 400px;
+    width: 100%;
+    margin: 0 auto;
+    background: #121212;
+  }
+  
+  header {
+    position: fixed;
+    max-width: 400px;
+    width: 100%;
+    height: 50px;
+    background: #191919;
+    z-index: 1;
+  }
+  header nav {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-left: 15px;
+    padding-right: 15px;
+    font-size: 1rem;
+  }
+  header nav h2 {
+    margin: auto 0;
+    font-weight: 500;
+    text-align: center;
+  }
+  header nav div {
+    margin: auto 0;
+    color: #fff;
+    font-size: 1.2rem;
+    cursor: pointer;
+  }
+  
+  main #library-tabs {
+    padding-top: 50px;
+  }
+  main #library-tabs .tab {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    color: #fff;
+    padding: 13px 15px;
+    transition: all .3s ease-in-out;
+    cursor: pointer;
+  }
+  main #library-tabs .tab:hover {
+    background: rgba(0, 0, 0, 0.7);
+    opacity: .7;
+  }
+  main #library-tabs .tab i {
+    font-size: 1.2rem;
+    color: #A9A9A9;
+    text-align: center;
+  }
+  main #library-tabs .tab i#library-icon {
+    width: 26px;
+  }
+  main #library-tabs .tab i#arrow-icon {
+    margin-left: auto;
+  }
+  main #library-tabs .tab p {
+    margin: auto 0 auto 15px;
+    font-size: .7rem;
+    font-weight: 400;
+  }
+  main #recently-played {
+    padding-bottom: 100px;
+  }
+  main #recently-played .title-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 15px 15px;
+  }
+  main #recently-played .title-row h3 {
+    margin: auto 0;
+    font-size: .8rem;
+  }
+  main #recently-played .title-row p {
+    margin: auto 0;
+    text-transform: uppercase;
+    font-size: .6rem;
+    letter-spacing: 1px;
+    cursor: pointer;
+  }
+  main #recently-played .album {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    padding: 10px 15px 5px;
+    color: #fff;
+    transition: all .3s ease-in-out;
+    cursor: pointer;
+  }
+  main #recently-played .album:hover {
+    background: rgba(0, 0, 0, 0.7);
+    opacity: .7;
+  }
+  main #recently-played .album .cover {
+    width: 55px;
+    height: 55px;
+  }
+  main #recently-played .album .cover img {
+    width: 100%;
+  }
+  main #recently-played .album .credits {
+    margin: auto 0 auto 15px;
+  }
+  main #recently-played .album .credits .title {
+    font-weight: 400;
+    font-size: 1.8rem;
+  }
+  main #recently-played .album .credits .artist {
+    color: #A9A9A9;
+    font-size: 1.2rem;
+    margin-top: 6px;
+  }
+  main #recently-played .album i {
+    font-size: 1.2rem;
+    color: #A9A9A9;
+    margin: auto 0;
+  }
+  main #recently-played .album i#arrow-icon {
+    margin-left: auto;
+  }
+  
+  footer {
+    position: fixed;
+    bottom: 0;
+    max-width: 400px;
+    width: 100%;
+    /* height: 100px; */
+    background: #282828;
+    z-index: 1;
+  }
+  footer #current-playing #time-status {
+    display: block;
+    background: #fff;
+    height: 2px;
+  }
+  footer #current-playing #playing {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 15px;
+    border-bottom: 1px solid #000;
+  }
+  footer #current-playing #playing #song {
+    text-align: center;
+  }
+  footer #current-playing #playing #song h6 {
+    font-size: .7rem;
+  }
+  footer #current-playing #playing #song h6 #artist-playing {
+    color: #A9A9A9;
+  }
+  footer #current-playing #playing #song p {
+    font-size: .6rem;
+    margin-top: 5px;
+  }
+  footer #current-playing #playing #song p i {
+    font-size: .8rem;
+  }
+  footer #current-playing #playing i {
+    font-size: 1.2rem;
+    color: #A9A9A9;
+    cursor: pointer;
+  }
+  footer #current-playing #playing i#pause-btn {
+    font-size: 1.6rem;
+    color: #fff;
+  }
+  footer #footer-nav {
+    margin-top: 8px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    color: #A9A9A9;
+  }
+  footer #footer-nav div {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    font-weight: 300;
+    cursor: pointer;
+  }
+  footer #footer-nav div#active {
+    color: #fff;
+  }
+  footer #footer-nav div i {
+    text-align: center;
+    font-size: 1.2rem;
+  }
+  footer #footer-nav div p {
+    font-size: .6rem;
+    text-align: center;
+    margin-top: 4px;
+  }
+
+  .font-besar{
+    font-size: 2.2rem;
+  }
+  .font-besar2{
+    font-size: 1.8rem!important;
+  }
+  .font-besar3{
+    font-size: 1.2rem!important;
+  }
+
+  
+
+  
+  @supports (display: grid) {
+    header nav {
+      display: grid !important;
+      grid-template-columns: auto 1fr auto;
+    }
+  
+    #library-tabs .tab {
+      display: grid !important;
+      grid-template-columns: auto 1fr auto;
+    }
+  
+    #recently-played .title-row {
+      display: grid !important;
+      grid-template-columns: 1fr auto;
+    }
+    #recently-played .album {
+      display: grid !important;
+      grid-template-columns: auto 1fr auto;
+    }
+  
+    #current-playing #playing {
+      display: grid !important;
+      grid-template-columns: auto 1fr auto;
+    }
+  
+    #footer-nav {
+      
+      grid-template-columns: repeat(5, 1fr);
+    }
+    #footer-nav div {
+      display: grid !important;
+      grid-template-rows: repeat(2, auto);
+    }
+  }
+  @media only screen and (max-width: 1024px) {
+    #time-status {
+      width: 30%;
+    }
+  }
+  @media only screen and (min-width: 1025px) {
+    #time-status {
+      animation-name: playing;
+      animation-duration: 259s;
+      animation-iteration-count: infinite;
+    }
+    @keyframes playing {
+      0% {
+        width: 0%;
+      }
+      100% {
+        width: 100%;
+      }
+    }
+  }
+  

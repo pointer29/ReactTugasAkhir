@@ -1,0 +1,103 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "title": "json-seaaaaaaarver",
+      "author": "typicode"
+    }
+  ],
+  "users": [
+    {
+      "password": "adawdaw",
+      "jenis_kelamin": "lakilaki",
+      "ttl": "1/10/1992",
+      "id": 1
+    },
+    {
+      "password": "aa",
+      "jenis_kelamin": "lakilaki",
+      "ttl": "11/09/11111",
+      "id": 2
+    },
+    {
+      "password": "12345",
+      "jenis_kelamin": "lakilaki",
+      "ttl": "6/10/1111",
+      "id": 3
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    },
+    {
+      "postId": "1",
+      "id": 2
+    }
+  ],
+  "profile": {
+    "email": "ule@gmail.com",
+    "password": "ule123"
+  },
+  "auth": {
+    "isValid": true
+  },
+  "album": [
+    {
+      "id": 1,
+      "pic": "https://images-na.ssl-images-amazon.com/images/I/61SfsJk29BL._SX355_.jpg",
+      "titleSong": "Tear In My Heart",
+      "artist": "Twenty One Pilot"
+    },
+    {
+      "id": 2,
+      "pic": "https://img.discogs.com/sGSRJ3cuBsidfTfYNstNYJZqrmQ=/fit-in/600x557/filters:strip_icc():format(jpeg):mode_rgb():quality(90)/discogs-images/R-11134847-1510499456-5370.jpeg.jpg",
+      "titleSong": "Kali Kedua",
+      "artist": "Raisa"
+    },
+    {
+      "id": 3,
+      "pic": "https://images-na.ssl-images-amazon.com/images/I/414r6d1glXL._SY355_.jpg",
+      "titleSong": "Honestly",
+      "artist": "Eric Nam"
+    },
+    {
+      "id": 4,
+      "pic": "https://i.scdn.co/image/a55912da6dd0f63a6b506b70510a83999353730e",
+      "titleSong": "Songs About Jane",
+      "artist": "Album &middot; by Maroon 5"
+    },
+    {
+      "id": 6,
+      "pic": "https://i.scdn.co/image/69c5c546289cead3c93a421dff4f7708f7c4eff5",
+      "titleSong": "Doris",
+      "artist": "Album &middot; by Earl Sweatshirt"
+    },
+    {
+      "id": 7,
+      "pic": "https://i.scdn.co/image/717290460ec646ffa372c7f483835eaacfea34f7",
+      "titleSong": "Coloring Book",
+      "artist": "Album &middot; by Chance The Rapper"
+    },
+    {
+      "id": 8,
+      "pic": "https://i.scdn.co/image/03d4fc7b3df5aa9dded70438699f250e4301bf62",
+      "titleSong": "Die Lit",
+      "artist": "Album &middot; by Playboi Carti"
+    },
+    {
+      "id": 9,
+      "pic": "https://i.scdn.co/image/5e49036d2121a0e78c88b6cee6d4c7ede65045c3",
+      "titleSong": "Catch These Vibes",
+      "artist": "Album &middot; by PnB Rock"
+    },
+    {
+      "id": 10,
+      "pic": "https://i.scdn.co/image/34a52aea7e7e3a194df14ce5ca5632d1c09e4dfe",
+      "titleSong": "Sum 41",
+      "artist": "Sum 41"
+    }
+  ]
+}

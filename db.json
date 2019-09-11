@@ -12,18 +12,6 @@
       "jenis_kelamin": "lakilaki",
       "ttl": "1/10/1992",
       "id": 1
-    },
-    {
-      "password": "aa",
-      "jenis_kelamin": "lakilaki",
-      "ttl": "11/09/11111",
-      "id": 2
-    },
-    {
-      "password": "12345",
-      "jenis_kelamin": "lakilaki",
-      "ttl": "6/10/1111",
-      "id": 3
     }
   ],
   "comments": [

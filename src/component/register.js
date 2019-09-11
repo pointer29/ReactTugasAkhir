@@ -44,6 +44,7 @@ class Register extends React.Component {
               if (RegisterSuccess){
                   alert('Register Success!! Please Login')
                   this.props.history.push('/login ');
+                  window.location.reload();
               }
             }
           }
@@ -103,12 +104,12 @@ class Register extends React.Component {
                         <form method="post" action="">
                             <div class="row">
                                 <div class="col-xs-12">
-                                    <input required type="text" class="form-control" placeholder="Email" id="email" onChange={this.onChange}></input>
+                                    <input required type="email" class="form-control" placeholder="Email" id="email" onChange={this.onChange}></input>
                                 </div>
                             </div>
                             <div class="row">
                                 <div class="col-xs-12">
-                                    <input required type="text" class="form-control" placeholder="Kofirmasi Email" id="reemail" onChange={this.onChange}></input>
+                                    <input required type="email" class="form-control" placeholder="Kofirmasi Email" id="reemail" onChange={this.onChange}></input>
                                 </div>
                             </div>
                             <div class="row">

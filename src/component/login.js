@@ -37,7 +37,8 @@ class Login extends React.Component {
     if (this.props !== nextProps){
       console.log('isValid', isValid)
       if (isValid){
-        this.props.history.push('/listmusic ')
+        this.props.history.push('/listmusic ');
+        window.location.reload();
       }
     }
   }

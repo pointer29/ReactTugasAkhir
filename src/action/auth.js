@@ -27,12 +27,10 @@ export function ListMusicRequest(data) {
 }
 
 
-
-
 export function postLogin(data) {
   return (dispatch) => {
     //   console.log('data', data)
-    axios.get('http://localhost:3000/auth', {email: data.username, password: data.password}).then(({data}) => {
+    axios.post('http://18.223.162.119:3008/api/login', {email: data.username, password: data.password}).then(({data}) => {
         console.log('res', data)
         dispatch(loginOnRequest(data))
     });
@@ -41,8 +39,8 @@ export function postLogin(data) {
 
 export function postRegister(data) {
   return (dispatch) => {
-    //   console.log('data', data)
-    axios.post('http://localhost:3000/users', {
+      console.log('data', data)
+    axios.post('http://18.223.162.119:3008/api/users', {
       email: data.username, 
       password: data.password,
       jenis_kelamin:data.jenis_kelamin,
@@ -57,7 +55,7 @@ export function postRegister(data) {
 export function getMusic(data) {
   return (dispatch) => {
     //   console.log('data', data)
-    axios.get('http://localhost:3000/album', {}).then(({data}) => {
+    axios.get('http://18.223.162.119:3000/album', {}).then(({data}) => {
         //console.log('res', data)
         dispatch(ListMusicRequest(data))
     });

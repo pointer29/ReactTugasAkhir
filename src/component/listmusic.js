@@ -39,6 +39,8 @@ class  Listmusic extends React.Component{
     };
 
     XcreateElement(titles,artists,url){
+
+        console.log('url', url, titles, artists)
         //console.log(titles);
         var node = document.createElement("Div");
             var node_cover = document.createElement("Div");
@@ -75,7 +77,7 @@ class  Listmusic extends React.Component{
         for(i=0;i<nextProps.dataAuth.length;i++){
             //console.log(nextProps.dataAuth[0].id);
             //
-            this.XcreateElement(nextProps.dataAuth[i].titleSong, nextProps.dataAuth[i].artist, nextProps.dataAuth[i].pic);
+            this.XcreateElement(nextProps.dataAuth[i].title, nextProps.dataAuth[i].artist, nextProps.dataAuth[i].albumArtUrl);
             //
         }
       

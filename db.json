@@ -12,6 +12,37 @@
       "jenis_kelamin": "lakilaki",
       "ttl": "1/10/1992",
       "id": 1
+    },
+    {
+      "password": "besokmakan1",
+      "jenis_kelamin": "lakilaki",
+      "ttl": "01/01/1996",
+      "id": 2
+    },
+    {
+      "password": "besokmakan1",
+      "jenis_kelamin": "lakilaki",
+      "ttl": "09/02/1997",
+      "id": 3
+    },
+    {
+      "password": "besokmakan",
+      "jenis_kelamin": "lakilaki",
+      "ttl": "09/01/1996",
+      "id": 4
+    },
+    {
+      "password": "besokmakan",
+      "jenis_kelamin": "lakilaki",
+      "ttl": "08/02/1997",
+      "id": 5
+    },
+    {
+      "email": "faisalarkan21@gmail.com",
+      "password": "arkan14811",
+      "jenis_kelamin": "lakilaki",
+      "ttl": "98/01/1996",
+      "id": 6
     }
   ],
   "comments": [
